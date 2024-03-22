@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Rathaus";
+    src: url("fonts/Rathaus25-Medium.otf");
+}
+
+body {
+    font-family: "Rathaus";
+    font-size: 23px;
+    overflow: hidden;
+    margin: 0;
+    line-height: 27px;
+    width: 100vw;
+}
+
+#background {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    margin: 0;
+}
+
+pre {
+    font-family: "Rathaus";
+    max-width: 100%;
+}
+
+#totalwork {
+    padding-left: .5vw;
+    padding-right: 10%;
+}
+
+.container {
+    top: 0;
+    background-color: white;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    display: inline-grid;
+    grid-template-columns: 30% [col-start] 20% [col-start] 25% [col-start] 25% [col-start];
+    height: 100vh;
+    width: 100vw;
+}
+
+work {
+    z-index: 10;
+    position: fixed;
+    left: .5%;
+    user-select: none;
+    padding-bottom: 5vh;
+    padding-right: 5vw;
+}
+
+#contact {
+    padding-top: .5vh;
+    padding-left: .5vw;
+}
+
+#homeContact {
+    z-index: 15;
+    position: fixed;
+    top: 0;
+    padding-top: .5vh;
+    padding-left: .5vw;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+#homework {
+    position: fixed;
+    top: 0;
+    padding-top: .5vh;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+contact {
+    z-index: 10;
+    position: fixed;
+    right: .5%;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    user-select: none;
+}
+
+.contactAnimationLeft {
+    animation-name: contactMoveLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.contactAnimationRight {
+    animation-name: contactMoveRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contactMoveLeft {
+    from {
+        right: .5%;
+        transform: translate(0, 0);
+    }
+    to {
+        right: 25%;
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes contactMoveRight {
+    from {
+        right: 25%;
+        transform: translate(100%, 0);
+    }
+    to {
+        right: .5%;
+        transform: translate(0, 0);
+    }
+}
+
+.text {
+    padding-top: .5vh;
+    visibility: hidden;
+    z-index: 3;
+}
+
+#tw {
+    position: fixed;
+    top: 50%;
+    font-size: 10vw;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#twbg {
+    z-index: 2;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    font-size: 10vw;
+    color: red;
+}
+
+#bg {
+    display: grid;
+    grid-template-columns: 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw;
+    width: 1100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bg-element {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    background-color: black;
+    text-align: center;
+}
+
+video {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    margin: auto;
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+/* img {
+    
+    margin: auto;
+    width: 100%;
+    height: auto;
+} */
+
+.grid-element {
+    width: 100vw;
+}
+
+.subtitle {
+    z-index: 10;
+    filter: invert(1);
+    mix-blend-mode: difference;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100vw;
+}
+
+.padded {
+    margin: auto;
+    width: auto;
+    max-height: 90%;
+}
