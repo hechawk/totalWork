@@ -24,20 +24,17 @@ function toggleText() {
     homework = document.getElementById("homework");
     totalwork = document.getElementById("totalwork");
     services = document.getElementById("services");
-    clients = document.getElementById("clients");
     container = document.getElementsByClassName("container")[0]
 
     if (textHidden) {
-        homework.style.visibility = ""
+        homework.style.visibility = "hidden"
         container.style.display = "inline-grid"
         totalwork.style.visibility = "visible"
         services.style.visibility = "visible"
-        clients.style.visibility = "visible"
         textHidden = !textHidden
     } else {
-        totalwork.style.visibility = "hidden"
+        totalwork.style.visibility = "visible"
         services.style.visibility = "hidden"
-        clients.style.visibility = "hidden"
         container.style.display = "none"
         textHidden = !textHidden
     }
@@ -48,13 +45,15 @@ function toggleContact() {
     homeContact = document.getElementById("homeContact");
     if (contactTextHidden) {
         contact.style.visibility = "visible"
-        homeContact.classList.remove("contactAnimationRight")
-        homeContact.classList.add("contactAnimationLeft")
+        homeContact.style.visibility = "hidden"
+        // homeContact.classList.remove("contactAnimationRight")
+        // homeContact.classList.add("contactAnimationLeft")
         contactTextHidden = !contactTextHidden
     } else {
         contact.style.visibility = "hidden"
-        homeContact.classList.remove("contactAnimationLeft")
-        homeContact.classList.add("contactAnimationRight")
+        homeContact.style.visibility = "visible"
+        // homeContact.classList.remove("contactAnimationLeft")
+        // homeContact.classList.add("contactAnimationRight")
         contactTextHidden = !contactTextHidden
     }
 }
@@ -71,6 +70,10 @@ imageIndex = 0
 
 function nextImage() {
     imageIndex++;
-    if (imageIndex > 9) imageIndex = 0;
-    document.getElementById("bg").style.transform = `translate(${-9.090909090909091 * imageIndex}%)`;
+    if (imageIndex > 8) imageIndex = 0;
+    document.getElementById("bg").style.transform = `translate(${-11.111111111111111 * imageIndex}%)`;
 }
+
+document.addEventListener('click', (e) => {
+    console.log(e.target)
+})

@@ -43,8 +43,7 @@ pre {
     position: fixed;
     z-index: 1;
     display: inline-grid;
-    grid-template-columns: 30% [col-start] 20% [col-start] 25% [col-start] 25% [col-start];
-    height: 100vh;
+    grid-template-columns: 33% [col-start] 33% [col-start] 33% [col-start];
     width: 100vw;
 }
 
@@ -154,8 +153,8 @@ contact {
 
 #bg {
     display: grid;
-    grid-template-columns: 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw;
-    width: 1100vw;
+    grid-template-columns: 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw 100vw;
+    width: 900vw;
     height: 100vh;
     z-index: -1;
 }
@@ -165,6 +164,8 @@ contact {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
     object-fit: contain;
     background-color: black;
     text-align: center;
@@ -192,20 +193,37 @@ img {
 
 .grid-element {
     width: 100vw;
+    height: 100vh;
 }
 
 .subtitle {
     z-index: 10;
-    filter: invert(1);
-    mix-blend-mode: difference;
+    color: white;
     position: absolute;
     text-align: center;
     bottom: 0;
     width: 100vw;
+    background-color: black;
 }
 
 .padded {
     margin: auto;
     width: auto;
     max-height: 90%;
+}
+
+.full-bleed {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 50vh;
+    transform: translate(0, -50%);
+}
+
+#top-bar {
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    width: 100vw;
+    height: 5vh;
 }

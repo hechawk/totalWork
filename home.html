@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="top-bar"></div>
     <div id="bg" onclick="nextImage()" style="transform: translate(0%);">
         <div class="bg-element">
             <video autoplay muted playsinline loop class="padded">
@@ -19,12 +20,13 @@
             <p class="subtitle">Góði Hirðirinn</p>
         </div>
         <div class="bg-element">
-            <img src="media/Total Times.jpg" class="padded">
+            <img src="media/Total Times.jpg" class="full-bleed">
             <p class="subtitle">Total Times</p>
         </div>
         <div class="bg-element">
-            <img src="media/1.jpg" class="padded">
+            <img src="media/1.jpg" class="full-bleed">
             <p class="subtitle">A Game of Two Halves</p>
+            <div class="black-bar"></div>
         </div>
         <div class="bg-element">
             <img src="media/Egilssonar.jpg" class="padded">
@@ -46,23 +48,27 @@
             <img src="media/midair.jpg" class="padded">
             <p class="subtitle">Mid Air by Mathilde Hawkins and Max Mauro Schmid</p>
         </div>
-        <div class="bg-element">
+        <!-- <div class="bg-element">
             <img src="media/F1000015.jpg" class="padded">
             <p class="subtitle">Monk of Helvítica</p>
-        </div>
+        </div> -->
     </div>
     <work id="homework" style="visibility: visible">Total Work</work>
     <div class="container" onclick="toggleContact(); toggleText()" style="display: none;">
         <div id="twbg">TOTAL WORK</div>
         <p id="totalwork" class="text">
-            Total Work is an international design studio dedicated towards providing clients the work of tomorrow.
-            <br><br>
-            When not in their office, the members of Total Work teach at the Köln International School of Design.
-            <br><br>
-            Total Work was founded in 2019, during the global pandemic. 
-            <br><br>
-            We aim to use our skills, unique backgrounds, and chemistry to conjure well 
-            executed ideas with the goal of cultural fruition in mind.
+            About<br><br>
+            Total Work is an international graphic
+            & animation studio dedicated to
+            helping clients develop strong visual
+            identities.<br><br>
+            We provide a total service for our
+            clients. We have backgrounds in 3D,
+            web development, animation, graphic
+            design and typography.<br><br>
+            Total Work was founded in 2024 by a
+            German, an American, an Icelander,
+            and an Englishman
         </p>
         <p id="services" class="text">
             Services 
@@ -73,25 +79,7 @@
             Custom Typefaces<br>
             Graphic Design<br>
             Editorial Design<br>
-            Web Design<br>
-            <br>
-            <br>
-            Locations<br>
-            <br>
-            Cologne, Germany<br>
-            New York, USA<br>
-            Reykjavík, Iceland<br>
-            London, UK<br>
-            <br>
-            <br>
-            Members<br> 
-            <br>
-            Hector Hawkins<br>
-            Ishar Hawkins<br>
-            Ísak Einarsson<br>
-            Nima Hülshorst<br>
-        </p>
-        <p id="clients" class="text">
+            Web Design<br><br>
             Selected Clients<br>
             <br>
             Adidas<br>
@@ -108,25 +96,23 @@
             Pangram Pangram<br>
             Type Today<br>
             Hvala Magazine Issue 09<br>
+
         </p>
         <p id="contact" class="text">
+            Contact
             <br>
             <br>
             Mathias-Brüggen-Strasse 4<br>
             50827 Cologne<br>
             Germany<br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            All Inquiries<br>
-            <br>
-            totalwork.work(at)gmail.com<br>
+            totalwork.work(at)gmail.com<br><br>
             +49 176 50241710<br>
             <br>
-            We are currently not accepting any internship applications<br>
+            For all job and internship
+            applications please put
+            “Application” in the subject
+            of your email
         </p>
     </div>
     <contact id="homeContact" onclick="toggleText(); toggleContact()">Info</contact>
