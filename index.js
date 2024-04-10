@@ -33,6 +33,7 @@ function toggleText() {
         services.style.visibility = "visible"
         textHidden = !textHidden
     } else {
+        homework.style.visibility = "visible"
         totalwork.style.visibility = "visible"
         services.style.visibility = "hidden"
         container.style.display = "none"

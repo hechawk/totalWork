@@ -45,6 +45,7 @@ pre {
     display: inline-grid;
     grid-template-columns: 33% [col-start] 33% [col-start] 33% [col-start];
     width: 100vw;
+    height: 100vh;
 }
 
 work {
